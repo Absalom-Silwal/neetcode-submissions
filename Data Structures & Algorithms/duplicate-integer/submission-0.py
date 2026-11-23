@@ -1,0 +1,12 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        unq_num = []
+        for num in nums:
+            if num in unq_num:
+                return True
+            else:
+                unq_num.append(num)
+
+        return False
+        
+        
